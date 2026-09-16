@@ -1,0 +1,48 @@
+Find Pair With Given Sum
+Find whether two numbers exist whose sum equals a target value.
+Input
+numbers = [2, 7, 11, 15]
+target = 9
+
+Check if required number already exists in the set.
+Example:
+2 -> Need 7
+7 -> Found 2 in set
+Answer Found
+
+
+Find Pair With Given Sum
+Find whether two numbers exist whose sum equals a target value.
+Input
+numbers = [2, 7, 11, 15]
+target = 9
+
+Check if required number already exists in the set.
+Example:
+2 -> Need 7
+7 -> Found 2 in set
+Answer Found
+
+
+Find All Numbers Appearing Exactly Once
+
+Given an array of integers, some numbers may appear multiple times.
+Write a program to find and return all numbers that appear exactly once in the array.
+
+The output should preserve the order in which the numbers first appear.
+
+Input
+numbers = [1, 2, 3, 2, 4, 5, 1, 6]
+Output
+[3, 4, 5, 6]
+Question: Check if Two Arrays Have Any Common Element
+
+Given two arrays of integers, determine whether they share at least one common element.
+
+Use a set to efficiently check whether an element from the second array already exists in the first array.
+
+Input
+arr1 = [1, 2, 3, 4]
+arr2 = [8, 9, 3, 10]
+Output
+Common Element Found

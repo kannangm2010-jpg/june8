@@ -1,0 +1,22 @@
+
+numbers = [1, 2, 3, 2, 4, 5, 1, 6]
+n=[]
+i=len(numbers)
+v=0
+while i<9:
+    c=0
+    while c<9 :
+        v=v+1
+        for u in numbers:
+            if u not in n and v==1:
+                n.append(u)
+                c=c+1
+
+
+        	
+        	    
+                  
+			
+
+      
+    

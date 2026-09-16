@@ -1,0 +1,22 @@
+"""
+Find All Numbers Appearing Exactly Once
+Given an array of integers, some numbers may appear multiple times.
+Write a program to find and return all numbers that appear exactly once in the array.
+The output should preserve the order in which the numbers first appear.
+________________________________________
+Input
+numbers = [1, 2, 3, 2, 4, 5, 1, 6]
+________________________________________
+Output
+[3, 4, 5, 6]
+
+"""
+numbers = [1, 2, 3, 2, 4, 5, 1, 6]
+n=[]
+
+for i in numbers:
+	if i not in n:
+		n.append(i)
+print(n)
+		
+		

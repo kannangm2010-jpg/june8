@@ -1,0 +1,82 @@
+Tuple Packing and Unpacking
+# Store multiple values in a tuple and unpack them into variables.
+# tuple_unpacking.py
+
+student = ("Alice", 21, "Python")
+
+name, age, course = student
+
+print("Name:", name)
+print("Age:", age)
+print("Course:", course)
+
+a, *b = (1, 2, 3, 4, 5)
+
+print("a =", a)
+print("b =", b)
+-------------------
+
+
+Find Unique Visitors to a Website
+A website logs visitor IDs. Some visitors visit multiple times. Find how many unique visitors visited the website.
+Input
+	visitors = [101, 102, 103, 101, 104, 102, 105]
+Logic
+1.	A set stores only unique values. 
+2.	Convert the list into a set. 
+3.	Count the elements in the set. 
+
+Program
+visitors = [101, 102, 103, 101, 104, 102, 105]
+
+unique_visitors = set(visitors)
+
+print("Unique Visitors:", unique_visitors)
+print("Count:", len(unique_visitors))
+-----------------------------
+
+
+Find Employees Present in Both Teams 
+Two project teams are formed. Find employees working in both teams.
+Input
+team_a = {"John", "Mary", "Tom", "David"}
+team_b = {"Tom", "David", "Sam", "Alex"}
+
+Logic
+1.	Convert both collections into sets. 
+2.	Use intersection(). 
+3.	Common employees will be returned. 
+
+Program
+team_a = {"John", "Mary", "Tom", "David"}
+team_b = {"Tom", "David", "Sam", "Alex"}
+
+common = team_a.intersection(team_b)
+
+print("Working in both teams:", common)
+
+-------------------------------------
+
+
+Detect Duplicate Transaction IDs
+A bank receives transaction IDs. Detect and print all duplicate transaction IDs.
+Input
+	transactions = [1001, 1002, 1003, 1002, 1004, 1005, 1001]
+Logic
+1.	Maintain one set for seen transactions. 
+2.	Maintain another set for duplicates. 
+3.	If transaction already exists in seen set, add to duplicate set. 
+ 
+Program
+transactions = [1001, 1002, 1003, 1002, 1004, 1005, 1001]
+
+seen = set()
+duplicates = set()
+
+for txn in transactions:
+    if txn in seen:
+        duplicates.add(txn)
+    else:
+        seen.add(txn)
+
+print("Duplicate Transactions:", duplicates)
